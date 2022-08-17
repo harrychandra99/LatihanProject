@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DescriptionMovie"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/ivDescriptionMovie"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvNameDescriptionMovie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="name"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivDescriptionMovie"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp"/>
+    <TextView
+        android:id="@+id/tvDescDescriptionMovie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="test"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNameDescriptionMovie"
+        android:padding="16dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
